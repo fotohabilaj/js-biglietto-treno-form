@@ -24,9 +24,10 @@ formEl.addEventListener('submit', function(e){
     const priceEl = document.getElementById('price');
    
 
-    personEl.innerHTML = name;
+    personEl.innerHTML = `Biglietto di: ${name}` ;
     ticketEl.innerHTML = ticketType;
-    carrEl.innerHTML = Math.floor(Math.random() * 10);
-    cpcodeEl.innerHTML = Math.floor(Math.random() * 100000);
-    priceEl.innerHTML = ticketPrice;
+    carrEl.innerHTML = `carrozza:  ${Math.floor(Math.random() * 10)}`;
+    cpcodeEl.innerHTML = `Codice CP: ${Math.floor(Math.random() * 100000)}`;
+    priceEl.innerHTML = `${ticketPrice}€`;
+    document.getElementById('card').classList.remove('d-none')
 })
