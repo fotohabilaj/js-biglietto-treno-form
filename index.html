@@ -6,15 +6,16 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
-    <div class="container-fluid p-5 bg-body-secondary">
+<body class="bg-body-secondary">
+    <div class="container p-5">
        <form>
+        <legend class="mb-4 text-danger">Benvenuti in Ferrovie della Disperazione</legend>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nome e Cognome</label>
+    <label class="form-label">Nome e Cognome</label>
     <input type="text" class="form-control" id="name" value="" >
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">lunghezza perscorso km</label>
+    <label class="form-label">Lunghezza perscorso km</label>
     <input type="number" class="form-control" id="distance" value="">
   </div>
   <label class="form-label">La tua età</label>
@@ -24,13 +25,13 @@
   <option value="1">18+</option>
   <option value="0.6">65+</option>
 </select>
-  <button type="submit" id="button" class="btn btn-success mt-3">Conferma</button>
+  <button type="submit" id="button" class="btn btn-danger mt-3">Conferma</button>
   <button type="reset" class="btn bg-dark-subtle mt-3">Annulla</button>
 </form>
 
 <div class="card mt-5 d-none" id="card" style="width: 28rem;">
-  <div class="card-header">
-    Biglietto
+  <div class="card-header bg-danger text-light">
+    Biglietto valido solo in: Valle della Disperazione
   </div>
   <ul class="list-group list-group-flush ">
     <li class="list-group-item" id="person"></li>
